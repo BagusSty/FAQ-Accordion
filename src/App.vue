@@ -120,6 +120,7 @@ export default {
 }
 .bg {
   transform: translate(-60%, -72%);
+  object-fit: cover;
 }
 .bgs {
   position: inherit;
