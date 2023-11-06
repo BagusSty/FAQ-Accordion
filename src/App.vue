@@ -21,18 +21,13 @@
             <p
               class="hover:text-softRed hover:cursor-pointer"
               @click="toggleAnswer(index)"
-              v-bind:class="{ 'font-bold': faq.showAnswer }"
+              :class="{ 'font-bold': faq.showAnswer }"
             >
               {{ faq.question }}
             </p>
             <font-awesome-icon
-              v-if="faq.showAnswer"
               class="hover:cursor-pointer text-softRed"
-              :icon="['fas', 'chevron-up']"
-            />
-            <font-awesome-icon
-              v-else
-              class="hover:cursor-pointer text-softRed"
+              :class="{ rotated: faq.showAnswer, unrotated: !faq.showAnswer }"
               :icon="['fas', 'chevron-down']"
             />
           </div>
@@ -92,3 +87,14 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.rotated {
+  transition: transform 0.5s ease;
+  transform: rotate(-180deg);
+}
+.unrotated {
+  transition: transform 0.5s ease;
+  transform: rotate(0deg);
+}
+</style>
