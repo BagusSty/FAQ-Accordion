@@ -10,7 +10,7 @@
           alt=""
         />
         <img
-          class="static block sm:hidden overflow-hidden womens"
+          class="static block sm:hidden w-64 overflow-hidden womens"
           src="/images/illustration-woman-online-mobile.svg"
           alt=""
         />
