@@ -4,7 +4,7 @@
       class="max-w-screen-lg w-80 sm:w-full mx-auto m-4 bg-white shadow-lg rounded-2xl sm:p-12 p-8 text-center sm:flex justify-center items-center"
     >
       <div class="flex-1">
-        <img src="images/illustration-woman-online-desktop.svg" alt="" />
+        <img src="/images/illustration-woman-online-desktop.svg" alt="" />
       </div>
       <div class="ml-4 flex-1">
         <h1
